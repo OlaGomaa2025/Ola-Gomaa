@@ -1,4 +1,3 @@
-
 // Netflix-inspired Portfolio Application
 class NetflixPortfolio {
     constructor() {
