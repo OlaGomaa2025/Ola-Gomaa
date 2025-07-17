@@ -128,34 +128,14 @@ class NetflixPortfolio {
             
            testimonials: [
                 {
-                    quote: "Ola showed exceptional levels of dedication and commitment to get things done with high quality and standards. Her passion for training and knowledge transfer drove her performance.", [cite: 7, 8]
+                    quote: "Ola showed exceptional levels of dedication and commitment to get things done with high quality and standards. Her passion for training and knowledge transfer drove her performance, and her work always got great feedback from all of the stakeholders.", [cite: 7, 8]
                     author: "Ayman Mekawy", [cite: 1]
                     role: "Learning and Development Consultant (Former Manager at Trainera)" [cite: 2, 6]
                 },
                 {
-                    quote: "What drew me to Ola at the beginning was her passion, warmth and personability. Furthermore, she is hard-working, thoughtful and knowledgeable with a keen eye which led to her quickly being established as the 'go-to' person in the office for help with problem solving.", [cite: 26, 28]
-                    author: "Chris Griffiths", [cite: 36]
-                    role: "Line Manager at Macmillan Education (Springer Nature Group)" [cite: 24]
-                },
-                {
-                    quote: "It was a privilege to supervise Ola... Her passion for L&D, dedication, creativity, and expertise were instrumental in driving impactful initiatives. Her ability to navigate complex priorities with adaptability and resilience, combined with her collaborative spirit and openness to feedback, made her an invaluable member of our team.", [cite: 31, 31, 31]
+                    quote: "It was a privilege to supervise Ola... Her passion for L&D, dedication, creativity, and expertise were instrumental in driving impactful initiatives. Her ability to navigate complex priorities with adaptability and resilience, combined with her collaborative spirit and openness to feedback, made her an invaluable member of our team.", [cite: 31]
                     author: "María Ximena Córdoba", [cite: 31]
                     role: "Learning & Development | Talent Management | HRBP (Former Supervisor at UNOPS)" [cite: 31]
-                },
-                {
-                    quote: "Ola is exceptionally well-organized and deeply passionate about research and continuous learning. She consistently updates herself on market trends, ensuring her knowledge remains relevant and impactful. Dedicated to crafting unique learning experiences tailored to specific target audiences, Ola is highly self-motivated and committed...", [cite: 31, 31, 31]
-                    author: "Randa Mushtaha", [cite: 31]
-                    role: "Growth-Focused EdTech Strategist (Former Manager)" [cite: 31]
-                },
-                {
-                    quote: "Ola has an impressive ability to conduct thorough research and find resourceful solutions to any challenge. She is passionate and skilled in designing meaningful and value-based learning solutions, yet deeply committed to creating a positive social and environmental impact as well.", [cite: 31, 31]
-                    author: "Loay Maher", [cite: 31]
-                    role: "Building Meaningful Learning Experiences (Former Manager)" [cite: 31]
-                },
-                {
-                    quote: "Ola exhibited a great motivation for work... She exhibited a high level of self-confidence and problem-solving skills during stressful times and could think clearly and remain organized to ensure the prioritization of tasks. All this while also finishing up her master's degree.", [cite: 148, 151, 152]
-                    author: "Erzen Ilijazi", [cite: 157]
-                    role: "Chief Regional Technology Centre of Americas, United Nations" [cite: 159]
                 },
                 {
                     quote: "Ms Gomaa was an exceptional student in our graduate programme... Her independent thinking and leadership skills were evident... This project was both timely (in terms of its urgency in relation to climate change and sustainability) and well-executed, with her group producing a functioning prototype that was endorsed by end-users.", [cite: 170, 172, 175]
