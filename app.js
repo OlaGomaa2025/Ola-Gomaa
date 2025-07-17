@@ -1,3 +1,4 @@
+
 // Netflix-inspired Portfolio Application
 class NetflixPortfolio {
     constructor() {
@@ -125,7 +126,7 @@ class NetflixPortfolio {
                     ]
                 }
             },
-            testimonials: [
+           testimonials: [
                 {
                     quote: "Ola showed exceptional levels of dedication and commitment to get things done with high quality and standards. Her passion for training and knowledge transfer drove her performance.", [cite: 7, 8]
                     author: "Ayman Mekawy", [cite: 1]
@@ -162,8 +163,6 @@ class NetflixPortfolio {
                     role: "Lecturer of Education and Technology, University College London (UCL)" [cite: 164, 168]
                 }
             ]
-        };
-        
         this.init();
     }
 
@@ -471,7 +470,9 @@ class NetflixPortfolio {
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => link.classList.remove('active'));
         activeLink.classList.add('active');
-    viewResume() {
+    }
+
+   viewResume() {
         // This will open your resume PDF in a new browser tab.
         // The filename 'Ola Gomaa Cv July 2025.pdf' must exactly match the file uploaded to your GitHub repository.
         window.open('Ola Gomaa Cv July 2025.pdf', '_blank');
