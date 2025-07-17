@@ -453,14 +453,21 @@ class NetflixPortfolio {
         activeLink.classList.add('active');
     }
 
-    viewResume() {
-        // In a real implementation, this would open a PDF viewer
-        alert('Resume viewing functionality would be implemented here with PDF display.');
+   viewResume() {
+        // This will open your resume PDF in a new browser tab.
+        // The filename 'Ola Gomaa Cv July 2025.pdf' must exactly match the file uploaded to your GitHub repository.
+        window.open('Ola Gomaa Cv July 2025.pdf', '_blank');
     }
 
     downloadResume() {
-        // In a real implementation, this would trigger a PDF download
-        alert('Resume download functionality would be implemented here.');
+        // This will trigger a download of your resume PDF.
+        // The filename 'Ola Gomaa Cv July 2025.pdf' must exactly match the file uploaded to your GitHub repository.
+        const link = document.createElement('a');
+        link.href = 'Ola Gomaa Cv July 2025.pdf';
+        link.download = 'Ola_Gomaa_Resume.pdf'; // This is the default filename the user will see when downloading
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 
     connectLinkedIn() {
