@@ -1,3 +1,4 @@
+
 // Netflix-inspired Portfolio Application
 class NetflixPortfolio {
     constructor() {
@@ -126,23 +127,20 @@ class NetflixPortfolio {
                 }
             },
             testimonials: [
-                
                 {
-                    quote: "It was a privilege to supervise Ola... Her passion for L&D, dedication, creativity, and expertise were instrumental in driving impactful initiatives. Her ability to navigate complex priorities with adaptability and resilience, combined with her collaborative spirit and openness to feedback, made her an invaluable member of our team.", [cite: 31, 31, 31]
-                    author: "María Ximena Córdoba", [cite: 31]
-                    role: "Learning & Development | Talent Management | HRBP (Former Supervisor at UNOPS)" [cite: 31]
+                    quote: "Ola's innovative approach to learning design has transformed our global training programs.",
+                    author: "Senior Director, NewCold",
+                    role: "Leadership Team"
                 },
                 {
-                    quote: "Ola is exceptionally well-organized and deeply passionate about research and continuous learning. She consistently updates herself on market trends, ensuring her knowledge remains relevant and impactful. Dedicated to crafting unique learning experiences tailored to specific target audiences, Ola is highly self-motivated and committed...", [cite: 31, 31, 31]
-                    author: "Randa Mushtaha", [cite: 31]
-                    role: "Growth-Focused EdTech Strategist (Former Manager)" [cite: 31]
+                    quote: "Her expertise in AI-driven learning solutions is unparalleled in the industry.",
+                    author: "Program Manager, UNOPS",
+                    role: "United Nations"
                 },
-             
                 {
-                    quote: "Ola exhibited a great motivation for work... She exhibited a high level of self-confidence and problem-solving skills during stressful times and could think clearly and remain organized to ensure the prioritization of tasks. All this while also finishing up her master's degree.", [cite: 148, 151, 152]
-                    author: "Erzen Ilijazi", [cite: 157]
-                    role: "Chief Regional Technology Centre of Americas, United Nations" [cite: 159]
-              
+                    quote: "Ola brings both strategic vision and practical execution to every project.",
+                    author: "Chief Learning Officer, Almentor",
+                    role: "EdTech Platform"
                 }
             ]
         };
@@ -455,7 +453,8 @@ class NetflixPortfolio {
         navLinks.forEach(link => link.classList.remove('active'));
         activeLink.classList.add('active');
     }
-  viewResume() {
+
+   viewResume() {
         // This will open your resume PDF in a new browser tab.
         // The filename 'Ola Gomaa Cv July 2025.pdf' must exactly match the file uploaded to your GitHub repository.
         window.open('Ola Gomaa Cv July 2025.pdf', '_blank');
