@@ -125,6 +125,7 @@ class NetflixPortfolio {
                     ]
                 }
             },
+            
            testimonials: [
                 {
                     quote: "Ola showed exceptional levels of dedication and commitment to get things done with high quality and standards. Her passion for training and knowledge transfer drove her performance.", [cite: 7, 8]
