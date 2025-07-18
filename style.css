@@ -751,24 +751,11 @@ body {
   margin-top: 3rem;
 }
 
-.curved-title span {
-  display: inline-block;
-  transform: rotate(calc(var(--i) * 4deg)) translateY(calc(var(--i) * -1px));
-  animation: wave 2s infinite ease-in-out;
-}
-
-/* Add a wave animation for each letter */
-@keyframes wave {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-/* Pulse animation for overall curve effect */
-@keyframes pulse {
-  0%, 100% { transform: rotateX(10deg); }
-  50% { transform: rotateX(12deg); }
-}
-  
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .intro-title:hover .title-text,
