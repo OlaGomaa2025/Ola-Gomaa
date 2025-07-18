@@ -741,15 +741,17 @@ body {
 }
 .curved-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 5rem;
+  font-size: 6rem;
   color: #e50914; /* Netflix red */
+  text-shadow: 0 0 30px rgba(229, 9, 20, 0.5);
   display: flex;
   justify-content: center;
-  gap: 0.3em;
-  transform: rotateX(10deg);
-  animation: pulse 3s infinite ease-in-out;
+  align-items: flex-end;
+  gap: 0.5rem;
   margin-top: 3rem;
+  transform: scaleY(1.2) rotateX(10deg);
 }
+
 
 .hero-title {
   font-size: 4.5rem;
