@@ -1497,25 +1497,19 @@ a:focus-visible,
     transform: translateY(0);
   }
 }
-
-/* MAIN + ALL PERSONAS — White */
-.curved-title span {
-  color: white !important;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
-}
-/* Netflix Logo Style for Titles */
+/* Netflix Logo Style for Titles - CORRECTED */
 .netflix-logo-style {
   font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for Netflix look */
   font-size: clamp(4.5rem, 10vw, 8rem); /* Make it larger and responsive */
   font-weight: normal; /* Bebas Neue usually doesn't need bold */
   color: var(--netflix-red); /* Base color is Netflix red */
-  text-shadow: 
+  text-shadow:
     0 0 10px rgba(229, 9, 20, 0.5), /* Soft glow */
     0 0 20px rgba(229, 9, 20, 0.3),
     0 0 30px rgba(229, 9, 20, 0.1); /* More layers for depth */
   letter-spacing: 0.05em; /* Netflix font is slightly spaced */
   text-transform: uppercase; /* Ensure it's all caps */
-  /* Remove any conflicting background-clip/text-fill-color if present from .title-text */
+  /* Ensure no conflicting background-clip/text-fill-color if present from .title-text */
   background: none;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
