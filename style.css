@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 :root {
-  /* Colors - Base Design System */
+  /* Colors */
   --color-background: rgba(252, 252, 249, 1);
   --color-surface: rgba(255, 255, 253, 1);
   --color-text: rgba(19, 52, 59, 1);
@@ -740,7 +738,21 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
-  
+}
+.curved-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  color: white;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  transform: scaleY(1.2) rotateX(10deg);
+}
+
+
 .hero-title {
   font-size: 4.5rem;
   font-weight: 800;
@@ -1484,4 +1496,10 @@ a:focus-visible,
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* MAIN + ALL PERSONAS — White */
+.curved-title span {
+  color: white !important;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
 }
