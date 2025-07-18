@@ -1497,3 +1497,8 @@ a:focus-visible,
     transform: translateY(0);
   }
 }
+/* Override red Netflix style — make hero name white for all personas */
+.curved-title span {
+  color: white !important;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
+}
