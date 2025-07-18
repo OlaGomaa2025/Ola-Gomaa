@@ -740,25 +740,35 @@ body {
   text-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
 }
 .curved-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+  color: #e50914; /* Netflix red */
   display: flex;
   justify-content: center;
-  gap: 0.15em;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 6rem;
-  color: #e50914;
-  letter-spacing: 0.05em;
-  text-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
-  animation: pulse-glow 2.5s ease-in-out infinite;
+  gap: 0.3em;
   transform: rotateX(10deg);
+  animation: pulse 3s infinite ease-in-out;
   margin-top: 3rem;
 }
-@keyframes pulse-glow {
-  0%, 100% {
-    text-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
-  }
-  50% {
-    text-shadow: 0 0 40px rgba(229, 9, 20, 1);
-  }
+
+.curved-title span {
+  display: inline-block;
+  transform: rotate(calc(var(--i) * 4deg)) translateY(calc(var(--i) * -1px));
+  animation: wave 2s infinite ease-in-out;
+}
+
+/* Add a wave animation for each letter */
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Pulse animation for overall curve effect */
+@keyframes pulse {
+  0%, 100% { transform: rotateX(10deg); }
+  50% { transform: rotateX(12deg); }
+}
+  
 }
 
 .intro-title:hover .title-text,
