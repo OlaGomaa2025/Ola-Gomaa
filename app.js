@@ -1,4 +1,14 @@
 // Netflix-inspired Portfolio Application
+window.addEventListener('DOMContentLoaded', () => {
+  const sound = document.getElementById('netflix-sound');
+  sound.volume = 0.8;
+
+  sound.play().catch(() => {
+    document.querySelector('.intro-title')?.addEventListener('click', () => {
+      sound.play();
+    });
+  });
+});
 class NetflixPortfolio {
     constructor() {
         this.currentPersona = 'educator';
