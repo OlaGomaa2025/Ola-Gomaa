@@ -1,4 +1,3 @@
-
 :root {
   /* Colors */
   --color-background: rgba(252, 252, 249, 1);
@@ -743,13 +742,13 @@ body {
 .curved-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 6rem;
-  color: white;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  color: #e50914; /* Netflix red */
+  text-shadow: 0 0 30px rgba(229, 9, 20, 0.5);
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 0.1rem;
-  margin-top: 1rem;
+  gap: 0.5rem;
+  margin-top: 3rem;
   transform: scaleY(1.2) rotateX(10deg);
 }
 
@@ -1498,8 +1497,7 @@ a:focus-visible,
     transform: translateY(0);
   }
 }
-
-/* MAIN + ALL PERSONAS — White */
+/* Override red Netflix style — make hero name white for all personas */
 .curved-title span {
   color: white !important;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
