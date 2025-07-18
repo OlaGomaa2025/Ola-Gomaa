@@ -1503,3 +1503,53 @@ a:focus-visible,
   color: white !important;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
 }
+/* Netflix Logo Style for Titles */
+.netflix-logo-style {
+  font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for Netflix look */
+  font-size: clamp(4.5rem, 10vw, 8rem); /* Make it larger and responsive */
+  font-weight: normal; /* Bebas Neue usually doesn't need bold */
+  color: var(--netflix-red); /* Base color is Netflix red */
+  text-shadow: 
+    0 0 10px rgba(229, 9, 20, 0.5), /* Soft glow */
+    0 0 20px rgba(229, 9, 20, 0.3),
+    0 0 30px rgba(229, 9, 20, 0.1); /* More layers for depth */
+  letter-spacing: 0.05em; /* Netflix font is slightly spaced */
+  text-transform: uppercase; /* Ensure it's all caps */
+  /* Remove any conflicting background-clip/text-fill-color if present from .title-text */
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+
+/* Adjust existing .intro-title to not override new style */
+.intro-title {
+    /* Keep existing properties that don't conflict, but remove font/color specific ones */
+    font-size: clamp(3rem, 8vw, 6rem); /* Keep its responsive sizing if needed, or remove if netflix-logo-style defines it all */
+    font-weight: 300; /* This might conflict with Bebas Neue, consider removing or setting to normal */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-bottom: var(--space-16); /* Ensure consistent spacing */
+}
+
+/* Ensure animations still apply */
+.intro-title:hover .netflix-logo-style, /* Apply hover to the new class */
+.intro-title:focus .netflix-logo-style {
+  animation: shimmer 1.5s ease-in-out;
+  text-shadow: 
+    0 0 10px rgba(229, 9, 20, 0.8), /* Stronger glow on hover */
+    0 0 20px rgba(229, 9, 20, 0.6),
+    0 0 40px rgba(229, 9, 20, 0.4);
+}
+
+/* Remove the old .title-text class if it's causing issues */
+.title-text {
+    /* This class might be conflicting. Remove or empty it out. */
+    /* For example: */
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    text-shadow: none;
+    font-family: unset; /* Revert to default if needed */
+    letter-spacing: unset;
+}
