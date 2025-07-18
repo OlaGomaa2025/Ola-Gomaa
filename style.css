@@ -1500,7 +1500,7 @@ a:focus-visible,
 /* Netflix Logo Style for Titles - CORRECTED */
 .netflix-logo-style {
   font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for Netflix look */
-  font-size: clamp(4.5rem, 10vw, 8rem); /* Make it larger and responsive */
+  font-size: clamp(5rem, 12vw, 9rem); /* Make it larger and responsive */
   font-weight: normal; /* Bebas Neue usually doesn't need bold */
   color: var(--netflix-red); /* Base color is Netflix red */
   text-shadow:
