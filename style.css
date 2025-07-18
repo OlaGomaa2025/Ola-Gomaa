@@ -739,6 +739,27 @@ body {
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
 }
+.curved-title {
+  display: flex;
+  justify-content: center;
+  gap: 0.15em;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  color: #e50914;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
+  animation: pulse-glow 2.5s ease-in-out infinite;
+  transform: rotateX(10deg);
+  margin-top: 3rem;
+}
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(229, 9, 20, 1);
+  }
+}
 
 .intro-title:hover .title-text,
 .intro-title:focus .title-text {
