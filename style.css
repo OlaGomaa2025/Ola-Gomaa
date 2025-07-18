@@ -738,7 +738,21 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
-  
+}
+.curved-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  color: white;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.1rem;
+  margin-top: 1rem;
+  transform: scaleY(1.2) rotateX(10deg);
+}
+
+
 .hero-title {
   font-size: 4.5rem;
   font-weight: 800;
@@ -1210,7 +1224,7 @@ body {
 }
 
 .timeline-achievements li::before {
-  content: '▶';
+  content: 'â–¶';
   position: absolute;
   left: 0;
   color: var(--netflix-red);
@@ -1483,32 +1497,24 @@ a:focus-visible,
     transform: translateY(0);
   }
 }
-/* Netflix Logo Style for Landing Page Title (Red, Curved, Glowing) */
+/* Netflix Logo Style for Titles - CORRECTED */
 .netflix-logo-style {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(6rem, 15vw, 11rem); /* UPDATED FOR LARGER SIZE */
-  font-weight: normal;
-  color: var(--netflix-red); /* RED color */
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif; /* Use Bebas Neue for Netflix look */
+  font-size: clamp(5rem, 12vw, 9rem); /* Make it larger and responsive */
+  font-weight: normal; /* Bebas Neue usually doesn't need bold */
+  color: var(--netflix-red); /* Base color is Netflix red */
+  text-shadow:
+    0 0 10px rgba(229, 9, 20, 0.5), /* Soft glow */
+    0 0 20px rgba(229, 9, 20, 0.3),
+    0 0 30px rgba(229, 9, 20, 0.1); /* More layers for depth */
+  letter-spacing: 0.05em; /* Netflix font is slightly spaced */
+  text-transform: uppercase; /* Ensure it's all caps */
+  /* Ensure no conflicting background-clip/text-fill-color if present from .title-text */
   background: none;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
-  
-  /* UPDATED REDUCED GLOW */
-  text-shadow:
-    0 0 5px rgba(229, 9, 20, 0.4),
-    0 0 10px rgba(229, 9, 20, 0.2),
-    0 0 15px rgba(229, 9, 20, 0.1);
-
-  /* Curve effect - Ensure these are present! */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 0.1rem;
-  transform: scaleY(1.1) rotateX(7deg);
-  transform-origin: center bottom;
 }
+
 /* Adjust existing .intro-title to not override new style */
 .intro-title {
     /* Keep existing properties that don't conflict, but remove font/color specific ones */
