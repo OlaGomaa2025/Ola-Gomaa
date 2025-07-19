@@ -721,33 +721,31 @@ body {
   z-index: 2;
 }
 .intro-title {
-  font-size: clamp(5rem, 12vw, 10rem);
-  font-weight: 800;
+  font-size: clamp(5rem, 12vw, 10rem); /* Keep this largest size for filling the screen */
+  font-weight: 800; /* Make it bold */
   margin-bottom: var(--space-16);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  text-transform: uppercase; /* Add this if you want it all caps, otherwise remove */
+
+  /* NEW: Add these properties here to control overall display and alignment */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-end; /* Align text to the bottom baseline for the curve effect */
+  gap: 0.1rem; /* Small gap between letters/elements */
+  margin-top: 1rem; /* Adjust overall vertical position if needed */
+  font-family: 'Bebas Neue', sans-serif; /* Set the font family directly here */
 }
 .title-text {
-  font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.05em;
-  background: linear-gradient(45deg, var(--netflix-red-hover), var(--netflix-red));
+  background: linear-gradient(45deg, var(--netflix-red-hover), var(--netflix-red)); /* This creates the red gradient */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* Changed text-shadow for a much more subtle, solid look */
-  text-shadow: 0 0 5px rgba(229, 9, 20, 0.5); /* Smaller blur, reduced opacity */
+  text-shadow: 0 0 5px rgba(229, 9, 20, 0.5); /* This is the subtle red shadow */
 }
 .curved-title {
-  font-family: 'Bebas Neue', sans-serif;
-  /* REMOVED: font-size: 6rem; - it will now inherit from .intro-title */
-  color: white; /* This color will be overridden by .title-text anyway */
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* This is a subtle shadow for the curve */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 0.1rem;
-  margin-top: 1rem;
   transform: scaleY(1.2) rotateX(10deg); /* This is the curve! */
 }
 
