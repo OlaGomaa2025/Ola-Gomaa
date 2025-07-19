@@ -746,15 +746,15 @@ body {
   text-shadow: 0 0 5px rgba(229, 9, 20, 0.5); /* This is the subtle red shadow */
 }
 .curved-title {
-  transform: scaleY(1.2) rotateX(10deg); /* This is the curve! */
+  transform: scaleY(1.25) rotateX(15deg); /* Slightly more pronounced scaleY and rotateX */
+  transform-origin: bottom center; /* Ensure the transform originates from the bottom */
 }
 
 .intro-title:hover .title-text,
 .intro-title:focus .title-text {
   animation: shimmer 1.5s ease-in-out;
-  text-shadow: 0 0 40px rgba(229, 9, 20, 0.6);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Subtle white glow */
 }
-
 .intro-subtitle {
   font-size: var(--font-size-xl);
   color: var(--netflix-light-gray);
