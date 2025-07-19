@@ -731,25 +731,24 @@ body {
 .title-text {
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.05em;
-  /* Adjusted gradient to be more consistently red, starting from a slightly lighter red */
   background: linear-gradient(45deg, var(--netflix-red-hover), var(--netflix-red));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* Increased text-shadow strength and spread */
-  text-shadow: 0 0 40px rgba(229, 9, 20, 0.6), 0 0 80px rgba(229, 9, 20, 0.3);
+  /* Changed text-shadow for a much more subtle, solid look */
+  text-shadow: 0 0 5px rgba(229, 9, 20, 0.5); /* Smaller blur, reduced opacity */
 }
 .curved-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 6rem;
-  color: white;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  /* REMOVED: font-size: 6rem; - it will now inherit from .intro-title */
+  color: white; /* This color will be overridden by .title-text anyway */
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* This is a subtle shadow for the curve */
   display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 0.1rem;
   margin-top: 1rem;
-  transform: scaleY(1.2) rotateX(10deg);
+  transform: scaleY(1.2) rotateX(10deg); /* This is the curve! */
 }
 
 .intro-title:hover .title-text,
