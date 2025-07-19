@@ -895,13 +895,29 @@ body {
   height: 80vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
-              linear-gradient(135deg, var(--netflix-black) 0%, var(--netflix-dark-gray) 100%);
+background-size: cover;
+background-position: center;
+transition: background-image 0.5s ease-in-out;
   position: relative;
   overflow: hidden;
 }
+/* New: Persona-specific background images */
+.hero-banner.persona-educator {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('educator.jpg');
+}
 
-.hero-banner::before {
+.hero-banner.persona-recruiter {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('recruiter.jpg');
+}
+
+.hero-banner.persona-collaborator {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('collaborate.jpg');
+}
+
+.hero-banner.persona-learner {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('learner.jpg');
+  
+}.hero-banner::before {
   content: '';
   position: absolute;
   top: 0;
