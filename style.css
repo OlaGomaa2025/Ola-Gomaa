@@ -720,16 +720,14 @@ body {
   text-align: center;
   z-index: 2;
 }
-
-.intro-title {
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 300;
+.intro-title { 
+  font-size: clamp(3rem, 8vw, 6rem); /* This sets the large size */
+  font-weight: 800; /* This makes it bold like Netflix */
   margin-bottom: var(--space-16);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
 }
-
 .title-text {
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.05em;
@@ -750,14 +748,6 @@ body {
   gap: 0.1rem;
   margin-top: 1rem;
   transform: scaleY(1.2) rotateX(10deg);
-}
-
-
-.hero-title {
-  font-size: 4.5rem;
-  font-weight: 800;
-  color: white;
-  margin-bottom: 1rem;
 }
 
 .intro-title:hover .title-text,
@@ -935,24 +925,25 @@ transition: background-image 0.5s ease-in-out;
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 600;
-  margin-bottom: var(--space-16);
+  font-size: clamp(3rem, 7vw, 5rem); /* Make it larger and more impactful */
+  font-weight: 800; /* Make it bolder */
+  margin-bottom: 1.5rem; /* Increase space below the title */
   color: var(--netflix-white);
 }
 
 .hero-subtitle {
-  font-size: var(--font-size-xl);
-  color: var(--netflix-red);
-  margin-bottom: var(--space-24);
-  font-weight: 500;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* Change this line */
+  color: var(--netflix-red); /* Ensure this is set to red */
+  margin-bottom: var(--space-32); /* Change this line */
+  font-weight: 500; /* Ensure this is 500 */
+  line-height: 1.4; /* Add this line */
 }
 
 .hero-description {
-  font-size: var(--font-size-lg);
+  font-size: clamp(1rem, 1.8vw, 1.25rem); /* Make it slightly larger and responsive */
   color: var(--netflix-light-gray);
   margin-bottom: var(--space-32);
-  line-height: 1.6;
+  line-height: 1.8; /* Increase line spacing for better readability */
 }
 
 .hero-actions {
