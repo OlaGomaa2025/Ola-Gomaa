@@ -156,12 +156,12 @@ class NetflixPortfolio {
         
         this.init();
     }
-  init()
+  init(){
      this.setupEventListeners();
      this.populateStaticContent();
      this.updatePersonaContent(); 
    }
-{    setupEventListeners() {
+  setupEventListeners() {
         // Landing gate
         const introTitle = document.querySelector('.intro-title');
         if (introTitle) {
