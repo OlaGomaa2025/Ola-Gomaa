@@ -720,13 +720,14 @@ body {
   text-align: center;
   z-index: 2;
 }
-.intro-title { 
-  font-size: clamp(3rem, 8vw, 6rem); /* This sets the large size */
-  font-weight: 800; /* This makes it bold like Netflix */
+intro-title {
+  font-size: clamp(4rem, 10vw, 8rem); /* Make it even larger for the landing page */
+  font-weight: 800; /* This should already be 800 for the bold look */
   margin-bottom: var(--space-16);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  /* text-transform: uppercase; (if you want it all caps, otherwise leave as is) */
 }
 .title-text {
   font-family: 'Bebas Neue', sans-serif;
@@ -925,12 +926,11 @@ transition: background-image 0.5s ease-in-out;
 }
 
 .hero-title {
-  font-size: clamp(3rem, 7vw, 5rem); /* Make it larger and more impactful */
-  font-weight: 800; /* Make it bolder */
-  margin-bottom: 1.5rem; /* Increase space below the title */
+  font-size: clamp(2rem, 5vw, 3rem); /* Made it even smaller for the banner */
+  font-weight: 800;
+  margin-bottom: 1.5rem;
   color: var(--netflix-white);
 }
-
 .hero-subtitle {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   color: var(--netflix-white); /* Changed from red to white */
