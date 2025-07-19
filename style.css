@@ -719,6 +719,8 @@ body {
 .intro-content {
   text-align: center;
   z-index: 2;
+  perspective: 1000px; /* <--- ADD THIS: Essential for 3D transforms on children */
+  /* You can adjust padding: 0 var(--space-16); if you want less horizontal spacing for "OLA GOMAA" to stretch more */
 }
 .intro-title {
   font-size: clamp(5rem, 12vw, 10rem); /* Keep this largest size for filling the screen */
@@ -739,11 +741,16 @@ body {
 }
 .title-text {
   letter-spacing: 0.05em;
-  background: var(--netflix-red); /* <--- Changed to use the direct Netflix red variable */
+  background: var(--netflix-red); /* Solid Netflix Red */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: none; /* Ensure this is still 'none' */
+  text-shadow: none; /* <--- NO GLOW ON DEFAULT STATE */
+
+  /* ADD THESE FOR THE CURVE */
+  display: inline-block; /* Essential for transforms to work on span */
+  transform: scaleY(1.25) rotateX(15deg); /* The curve transform */
+  transform-origin: bottom center; /* Pivot point for transform */
 }
 .curved-title {
   transform: scaleY(1.25) rotateX(15deg); /* This is the curve! */
@@ -753,7 +760,7 @@ body {
 .intro-title:hover .title-text,
 .intro-title:focus .title-text {
   animation: shimmer 1.5s ease-in-out;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Subtle white glow */
+  text-shadow: none !important; /* <--- Set to NONE and add !important to force NO glow on hover */
 }
 .intro-subtitle {
   font-size: var(--font-size-xl);
