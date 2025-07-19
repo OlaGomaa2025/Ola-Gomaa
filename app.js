@@ -156,13 +156,12 @@ class NetflixPortfolio {
         
         this.init();
     }
-
-    init() {
-        this.setupEventListeners();
-        this.populateStaticContent();
-    }
-
-    setupEventListeners() {
+  init()
+     this.setupEventListeners();
+     this.populateStaticContent();
+     this.updatePersonaContent(); 
+   }
+{    setupEventListeners() {
         // Landing gate
         const introTitle = document.querySelector('.intro-title');
         if (introTitle) {
@@ -272,8 +271,9 @@ class NetflixPortfolio {
 
     updatePersonaContent() {
         const personaData = this.data.personas[this.currentPersona];
-        
-        // Update navigation persona indicator
+        const heroBanner = document.getElementById('hero-banner');
+      
+      // Update navigation persona indicator
         const currentPersonaElement = document.getElementById('current-persona');
         if (currentPersonaElement) {
             currentPersonaElement.textContent = this.currentPersona.charAt(0).toUpperCase() + this.currentPersona.slice(1);
@@ -287,8 +287,15 @@ class NetflixPortfolio {
             heroSubtitle.textContent = personaData.tagline;
             heroDescription.innerHTML = `<p>${personaData.description}</p><p>${this.data.summary}</p>`;
         }
-        
-        // Update featured content
+        // Update hero banner background image //
+        if (heroBanner) {
+         // Remove any existing persona classes to ensure only one is active
+          heroBanner.classList.remove('persona-educator', 'persona-recruiter', 'persona-collaborator', 'persona-learner');
+         // Add the new persona class based on the current persona selected
+        heroBanner.classList.add(`persona-${this.currentPersona}`);
+   }      
+      
+      // Update featured content
         this.updateFeaturedContent();
     }
 
