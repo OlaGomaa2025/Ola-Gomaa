@@ -720,23 +720,24 @@ body {
   text-align: center;
   z-index: 2;
 }
-intro-title {
-  font-size: clamp(4rem, 10vw, 8rem); /* Make it even larger for the landing page */
-  font-weight: 800; /* This should already be 800 for the bold look */
+.intro-title {
+  font-size: clamp(5rem, 12vw, 10rem);
+  font-weight: 800;
   margin-bottom: var(--space-16);
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  /* text-transform: uppercase; (if you want it all caps, otherwise leave as is) */
 }
 .title-text {
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.05em;
-  background: linear-gradient(45deg, var(--netflix-white), var(--netflix-red));
+  /* Adjusted gradient to be more consistently red, starting from a slightly lighter red */
+  background: linear-gradient(45deg, var(--netflix-red-hover), var(--netflix-red));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(229, 9, 20, 0.3);
+  /* Increased text-shadow strength and spread */
+  text-shadow: 0 0 40px rgba(229, 9, 20, 0.6), 0 0 80px rgba(229, 9, 20, 0.3);
 }
 .curved-title {
   font-family: 'Bebas Neue', sans-serif;
@@ -926,15 +927,15 @@ transition: background-image 0.5s ease-in-out;
 }
 
 .hero-title {
-  font-size: clamp(2rem, 5vw, 3rem); /* Made it even smaller for the banner */
-  font-weight: 800;
-  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 500;
+  margin-bottom: 0.5rem; /* Changed from 1.5rem to 0.5rem to reduce space */
   color: var(--netflix-white);
 }
 .hero-subtitle {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  color: var(--netflix-white); /* Changed from red to white */
-  margin-bottom: var(--space-32);
+  color: var(--netflix-white);
+  margin-bottom: var(--space-16); /* Changed from --space-32 to --space-16 (16px) */
   font-weight: 500;
   line-height: 1.4;
 }
