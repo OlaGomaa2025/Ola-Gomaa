@@ -1504,7 +1504,7 @@ a:focus-visible,
 }
 
 /* MAIN + ALL PERSONAS — White */
-.curved-title span {
-  color: white !important;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
-}
+/* .curved-title span {
+  color: white !important;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5) !important;
+} */
