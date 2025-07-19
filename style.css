@@ -739,15 +739,15 @@ body {
 }
 .title-text {
   letter-spacing: 0.05em;
-  background: linear-gradient(45deg, var(--netflix-red-hover), var(--netflix-red)); /* This creates the red gradient */
+  background: var(--netflix-red); /* <--- Changed to use the direct Netflix red variable */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 5px rgba(229, 9, 20, 0.5); /* This is the subtle red shadow */
+  text-shadow: none; /* Ensure this is still 'none' */
 }
 .curved-title {
-  transform: scaleY(1.25) rotateX(15deg); /* Slightly more pronounced scaleY and rotateX */
-  transform-origin: bottom center; /* Ensure the transform originates from the bottom */
+  transform: scaleY(1.25) rotateX(15deg); /* This is the curve! */
+  /* transform-origin: bottom center; - REMOVE this as well for testing, simpler is better */
 }
 
 .intro-title:hover .title-text,
