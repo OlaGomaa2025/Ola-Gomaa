@@ -740,17 +740,16 @@ body {
   /* margin-top: 1rem; */
 }
 .title-text {
-  letter-spacing: 0.05em;
-  background: var(--netflix-red); /* Solid Netflix Red */
+  letter-spacing: 0.02em; /* Tighter letter spacing like Netflix */
+  background: var(--netflix-red);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: none; /* <--- NO GLOW ON DEFAULT STATE */
+  text-shadow: none;
 
-  /* ADD THESE FOR THE CURVE */
-  display: inline-block; /* Essential for transforms to work on span */
-  transform: scaleY(1.25) rotateX(15deg); /* The curve transform */
-  transform-origin: bottom center; /* Pivot point for transform */
+  display: inline-block;
+  transform: scaleY(1.05) rotateX(8deg); /* Slightly less vertical stretch, less extreme tilt */
+  transform-origin: bottom center;
 }
 
 .intro-title:hover .title-text,
