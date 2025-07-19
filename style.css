@@ -932,11 +932,11 @@ transition: background-image 0.5s ease-in-out;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem); /* Change this line */
-  color: var(--netflix-red); /* Ensure this is set to red */
-  margin-bottom: var(--space-32); /* Change this line */
-  font-weight: 500; /* Ensure this is 500 */
-  line-height: 1.4; /* Add this line */
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  color: var(--netflix-white); /* Changed from red to white */
+  margin-bottom: var(--space-32);
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .hero-description {
